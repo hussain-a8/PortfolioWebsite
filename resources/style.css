@@ -59,6 +59,7 @@ nav li {
     border-radius: 10px;
     padding: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .profile-pic {
@@ -72,4 +73,9 @@ nav li {
 .card-description{
     padding: 6px;
     letter-spacing: 1px;
+}
+
+h2 {
+    margin:0;
+    text-align: center;
 }
