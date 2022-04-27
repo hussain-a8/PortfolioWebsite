@@ -12,22 +12,23 @@
     <div class="hero">
         <img src="./resources/Calligraphy Circle Signature Photography Logo.png" id="logo">
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>My Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
+            <ul id="navlinks">
+                <li><strong><a href="#" class="button">HOME</a></strong></li>
+                <li><a href=#projects>My Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="content">
+    <div class="container">
 
         <div class="profile-card">
             <div class="card-head"></div>
 
             <div class="card-deets">
                 <img src="./resources/profilePic.jpg" class="profile-pic">
+                <br>
                 <h3>Hussain Ahmed, 21</h3>
                 <br>
             </div>
@@ -46,7 +47,39 @@
 
 
     </div>
-    <h2>My Projects</h2>
+    <div class="projects" id="projects">
+        <h2 id="projects-title">My Projects</h2>
+
+        <div class="project-card">
+            <h3>Piano Teacher</h3>
+            <img src="./resources/PianoTeacher.png" class="project-image">
+        </div>
+
+        <div class="project-card">
+            <h3>Mixed Messages</h3>
+            <img src="resources/MixedMessages.png" class="project-image">
+        </div>
+
+        <div class="project-card">
+            <h3>In Progress...</h3>
+        </div>
+
+
+
+
+
+
+    </div>
+    <script type="text/javascript">
+        let link = document.querySelectorAll('a');
+
+        function switchCol (){
+            link.style.color='blue';
+        }
+
+        link.addEventListener('mouseover', switchCol)
+    </script>
+    
     
 
 
@@ -54,4 +87,7 @@
 
 
 </body>
+<footer>
+    
+</footer>
 </html>
