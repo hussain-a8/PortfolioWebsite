@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hussain Portfolio</title>
+    <meta charset="UTF-8">
+    <link href="./resources/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="hero">
+        <img src="./resources/Calligraphy Circle Signature Photography Logo.png" id="logo">
+        <nav>
+            <ul id="navlinks">
+                <li><strong><a href="#" class="button">HOME</a></strong></li>
+                <li><a href=#projects>My Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <div class="profile-card">
+            <div class="card-head"></div>
+
+            <div class="card-deets">
+                <img src="./resources/profilePic.jpg" class="profile-pic">
+                <br>
+                <h3 id="name">Hussain Ahmed - 21</h3>
+                <br>
+            </div>
+
+            <div class="card-description">
+                <h4>Welcome to my portfolio page!</h4>
+                <br>
+                <p>After three years at Dental school, I decided to venture into the world of technology. I wanted to utilize my creativity and problem solving skills in a field where I know the possibilites are endless. I am now training to be a full stack engineer and have my eyes set on Web3 development.</p>
+            </div>
+
+            
+        </div>
+        
+
+
+
+
+    </div>
+    <div class="projects" id="projects">
+        <h2 id="projects-title">My Projects</h2>
+
+        <div class="project-card">
+            <a href="./resources/PianoLesson/PianoLessonIndex.html"><h3>Piano Teacher</h3></a>
+            <img src="./resources/PianoTeacher.png" class="project-image">
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/hussain-a8/MixedMessages/blob/main/mixedMessages.js"><h3>Mixed Messages</h3></a>
+            <img src="resources/MixedMessages.png" class="project-image">
+        </div>
+
+        <div class="project-card">
+            <a href="./resources/CurrencyConverter/CurrencyConverterIndex.html"><h3>Currency Converter</h3></a>
+            <img src="resources/CurrencyConverter.png" class="project-image">
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        let link = document.getElementById('name');
+
+        function switchCol (){
+            link.style.color='#1192ef';
+            link.style.textDecoration='underline';
+            link.style.fontSize='20px';
+        }
+
+        link.addEventListener('mouseover', switchCol)
+        link.addEventListener('mouseout', function(){
+            link.style.color='black';
+            link.style.textDecoration='none';
+        })
+    </script>
+    
+    
+
+
+
+
+
+</body>
+<footer>
+    
+</footer>
+</html>

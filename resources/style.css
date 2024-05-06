@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    width: 100%;
+    height:100vh;
+    background-image: url(./backgroundImg.png);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.hero {
+    background-color: white;
+    opacity: 0.95;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+#logo {
+    height:100px;
+    margin-left: 10px;
+}
+
+nav {
+    
+    list-style-type: none;
+    margin-right: 15px;
+    
+}
+
+nav li {
+    display: inline;
+    margin-right: 8px;
+
+}
+
+#navlinks a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #1192ef;
+    color: white
+    margin: 0 10px;
+    transition: 0.4s;
+
+
+}
+
+#navlinks a:hover {
+    background-color: white;
+    color: #1192ef;
+    border: 1px solid #1192ef;
+
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.profile-card {
+    background: white;
+    text-align: center;
+    width: 25%;
+    height: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+.profile-pic {
+    height: auto;
+    width:150px;
+    border-radius: 50%;
+    background: #1192ef;
+    padding: 6px;
+}
+
+.card-description{
+    padding: 6px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin:0;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px ;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+#projects-title{
+    grid-column: 1/ span 3;
+
+}
+
+.project-card{
+    background-color: white;
+    width: 90%;
+    height: auto; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-card h3 {
+    padding-top: 10px;
+}
+
+.project-image{
+    height: 150px;
+    width:autopx;
+    border-radius: 20px;
+}
+
+h3 {
+    color: black;
+}
